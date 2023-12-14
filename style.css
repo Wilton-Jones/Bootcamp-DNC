@@ -1,12 +1,23 @@
-* {
+:root {
+    --azulDnc: #0C70F2;
+    --pretoDnc: #303030;
+    --cinzaHover: #CCCCCC;
+
+    --fontePadrao: 'Inter';
+
+}
+
+body {
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), var(--pretoDnc);
+    background-repeat: no-repeat;
 }
 /* MENU DE NAVEGAÇÃO */
 #principal {
     width: 100%;
     height: 100px;
-    background-color: #303030;
+    background-color: var(--pretoDnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,10 +32,10 @@
     #principal button {
         width: 80px;
         height: 40px;
-        background-color: #0C70F2;
+        background-color: var(--azulDnc);
         border: none;
         color: #FFFFFF;
-        font-family: Inter;
+        font-family: var(--fontePadrao);
         font-size: 20px;
         font-weight: 600;
         margin-right: 5%;
@@ -32,7 +43,7 @@
         box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
     }
     #menuSuperior a {
-        font-family: Inter;
+        font-family: var(--fontePadrao);
         font-size: 25px;
         font-weight: 600;
         text-align: left;
@@ -40,5 +51,89 @@
         text-decoration: none;
     }
         #menuSuperior a:hover {
-            color: #CCCCCC;
+            color: var(--cinzaHover);
         }
+
+/* SEÇÃO PRINCIPAL DO SITE */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+header {
+    color: white;
+    font-family: var(--fontePadrao);
+}
+header h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+}
+header h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.invert {
+    background-color: black;
+    font-weight: 700;
+    padding: 5px;
+}
+
+/* SEÇÃO FORMULÁRIO */
+
+form {
+    font-family: var(--fontePadrao);
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    width: 600px;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input {
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+form label {
+    margin: 10px 0px 10px 0px;
+}
+form input::placeholder {
+    color: #393939 50%;
+}
+.checkboxItens label {
+    font-size: 25px;
+}
+.checkboxItens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="checkbox"] {
+    transform: scale(1.7);
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(12, 112, 242, 0.9);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 500;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+}
