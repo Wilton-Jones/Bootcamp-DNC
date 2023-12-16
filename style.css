@@ -9,9 +9,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), var(--pretoDnc);
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 30.91%, rgba(12, 112, 242, 0) 34.84%), var(--pretoDnc);
     background-repeat: no-repeat;
-    height: 2800px;
 }
 
 /* MENU DE NAVEGAÇÃO */
