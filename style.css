@@ -280,6 +280,20 @@ footer .linha2 a:first-child {
 
    input[type="checkbox"] {
     transform: scale(1);
-}
+   }
 
+   input[type="submit"] {
+    font-size: 20px;
+   }
+
+   /* SEÇÃO FOOTER/RODAPÉ */
+   footer .linha1 {
+    display: flex;
+    flex-direction: column;
+   }
+
+   footer .endereco {
+    width: 90%;
+    margin-bottom: 20px;
+   }
 }
