@@ -275,7 +275,7 @@ footer .linha2 a:first-child {
    }
 
    .checkboxItens label {
-    font-size: 17px;
+    font-size: 15px;
    }
 
    input[type="checkbox"] {
@@ -296,4 +296,9 @@ footer .linha2 a:first-child {
     width: 90%;
     margin-bottom: 20px;
    }
+
+   footer .linha2 {
+    font-size: 15px;
+   }
+
 }
